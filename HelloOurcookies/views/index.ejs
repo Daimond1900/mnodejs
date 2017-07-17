@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <!--<link rel='stylesheet' href='stylesheets/style.css'/>-->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="page-header"><%= title %><small><%= title %>正儿八经的神奇网站</small></h1>
+
+    <form class="form-inline text-right" >
+        <div class="form-group">
+            <label class="sr-only" for="mInputUserName">UserName</label>
+            <input type="text" class="form-control" id="mInputUserName" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="mInputPassword">Password</label>
+            <input type="password" class="form-control" id="mInputPassword" placeholder="请输入密码">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> 记住密码
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">登录</button>
+        <button type="submit" class="btn btn-default">注册</button>
+    </form>
+</div>
+</body>
 </html>
